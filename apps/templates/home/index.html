@@ -1,0 +1,19 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} Home {% endblock %}
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}"/>
+{% endblock stylesheets %}
+
+{% block content %}
+<div>
+    <h1 id="hello-world">Hello World!</h1>
+</div>
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<script src="{% static 'assets/js/script.js' %}"></script>
+{% endblock javascripts %}
